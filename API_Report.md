@@ -1,6 +1,6 @@
 # DataWrangler API — Technical Report
 
-**Authors:** Shayan (27027) & AbdurRehman (27041)  
+**Authors:** AbdurRehman   
 **Dataset Used for Demonstration:** Car Features (11,914 rows × 16 columns)  
 **Version:** 1.0.0
 
