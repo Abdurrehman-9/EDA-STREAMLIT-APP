@@ -2,7 +2,7 @@
 =============================================================================
 Streamlit EDA App  –  DataWrangler
 =============================================================================
-Authors : Shayan (27027) & AbdurRehman (27041)
+Authors : AbdurRehman 
 
 CLEANING LOGIC:
   • Car Features dataset  → exact domain-aware imputation from the notebook
@@ -100,7 +100,7 @@ df = df_raw.copy()
 # ═════════════════════════════════════════════════════════════════════════════
 
 if run_clean:
-    st.header("🧹 Data Cleaning")
+    st.header("Data Cleaning")
 
     cleaner = DataCleaner(df)
 
@@ -158,7 +158,7 @@ if run_clean:
 # ═════════════════════════════════════════════════════════════════════════════
 
 if run_missing:
-    st.header("🕳️ Missing Value Handling")
+    st.header("Missing Value Handling")
 
     mvh = MissingValueHandler(df)
 
@@ -280,7 +280,7 @@ if run_missing:
 # ═════════════════════════════════════════════════════════════════════════════
 
 if run_outlier:
-    st.header("📦 Outlier Analysis")
+    st.header("Outlier Analysis")
 
     # For Car Features use the same columns as the notebook
     if car_dataset:
@@ -423,7 +423,7 @@ if run_univar:
 # ═════════════════════════════════════════════════════════════════════════════
 
 if run_bivar:
-    st.header("🔗 Bivariate & Statistical Analysis")
+    st.header("📊 Bivariate & Statistical Analysis")
 
     biv      = BivariateAnalyzer(df)
     num_cols = df.select_dtypes("number").columns.tolist()
@@ -627,4 +627,4 @@ if run_bivar:
 # ═════════════════════════════════════════════════════════════════════════════
 
 st.markdown("---")
-st.caption("DataWrangler EDA API · Shayan 27027 & AbdurRehman 27041 · v2.0")
+st.caption("DataWrangler EDA API · by · AbdurRehman")
